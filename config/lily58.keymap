@@ -339,7 +339,7 @@
             //                     |      |      |      |  LWIN  |  | ENTER |      |       |       |
 
             bindings = <
-&trans                                    &trans             &trans                &trans             &trans             &trans                           &trans         &trans             &trans             &trans                 &trans             &trans
+&trans                                    &trans             &trans                &trans             &trans             &trans                           &trans         &trans             &trans             &trans                 &trans             &tog 6
 &kp GRAVE                                 &kp B              &hm LC(LEFT_SHIFT) L  &hm LEFT_ALT D     &hm LCTRL W        &kp Z                            &shifted_apos  &hm RCTRL F        &hm RIGHT_ALT O    &hm RC(RIGHT_SHIFT) U  &kp J              &kp SEMICOLON
 &quick_shift LEFT_SHIFT NON_US_BACKSLASH  &lt_secondary 4 N  &lt_essential 3 R     &lt_essential 1 T  &lt_essential 2 S  &kp G                            &kp Y          &lt_essential 2 H  &lt_essential 1 A  &lt_essential 3 E      &lt_secondary 4 I  &shifted_comma
 &kp LEFT_ALT                              &lt_essential 5 Q  &kp X                 &kp M              &kp C              &kp V     &kp LBKT     &kp RBKT  &kp K          &kp P              &shifted_period    &shifted_minus         &shifted_slash     &kp EQUAL
@@ -397,6 +397,25 @@
 &trans  &trans       &mt LC(LS(X)) LC(X)  &mt LC(LS(C)) LC(C)  &mt LC(LS(V)) LC(V)  &kp LC(Z)      &trans       &trans   &trans    &trans  &trans  &trans  &trans  &trans
                                           &trans               &trans               &kp LWIN       &kp SPACE    &kp RET  &kp BSPC  &trans  &trans
             >;
+        };
+
+        qwerty {
+            // ------------------------------------------------------------------------------------------------------------
+            // |  `    |  1  |  2  |  3   |  4   |  5   |                   |  6   |  7    |  8    |  9   |   0   | TOGGLE|
+            // | TAB   |  Q  |  W  |  E   |  R   |  T   |                   |  Y   |  U    |  I    |  O   |   P   |  - _  |
+            // | SHIFT |  A  |  S  |  D   |  F   |  G   |                   |  H   |  J    |  K    |  L   |   ;   |  ' "  |
+            // | CTRL  |  Z  |  X  |  C   |  V   |  B   |   "["  |  |  "]"  |  N   |  M    |  , <  |  . > |   / ? |  = +  |
+            //                     | ALT  | GUI  | LOWER|  SPACE |  | ENTER | BKSP | RAISE | GUI   |
+
+            bindings = <
+&trans     &kp N1  &kp N2    &kp N3    &kp N4    &kp N5                            &kp N6    &kp N7     &kp N8     &kp N9   &kp N0    &tog 6
+&kp TAB    &kp Q   &kp W     &kp E     &kp R     &kp T                             &kp Y     &kp U      &kp I      &kp O    &kp P     &kp MINUS
+&kp LSHFT  &kp A   &kp S     &kp D     &kp F     &kp G                             &kp H     &kp J      &kp K      &kp L    &kp SEMI  &kp SQT
+&kp LCTRL  &kp Z   &kp X     &kp C     &kp V     &kp B     &kp LBKT     &kp RBKT   &kp N     &kp M      &kp COMMA  &kp DOT  &kp FSLH  &kp EQUAL
+                             &kp LALT  &kp LGUI  &mo 1     &kp SPACE    &kp RET    &kp BSPC  &mo 2      &kp RGUI
+            >;
+
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
     };
 };
