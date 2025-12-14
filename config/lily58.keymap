@@ -352,8 +352,8 @@
         num_nav {
             bindings = <
 &trans  &trans        &trans                 &trans                 &trans                     &trans                            &trans         &trans          &trans                  &trans             &trans         &trans
-&trans  &kp ESC       &hm LEFT_GUI NUMBER_1  &hm LEFT_ALT NUMBER_2  &hm LEFT_CONTROL NUMBER_3  &kp PLUS                          &kp PAGE_UP    &hm RCTRL HOME  &hm RIGHT_ALT UP_ARROW  &hm RIGHT_GUI END  &kp DELETE     &trans
-&trans  &kp TAB       &kp NUMBER_4           &kp NUMBER_5           &kp NUMBER_6               &kp MINUS                         &kp PAGE_DOWN  &kp LEFT_ARROW  &kp DOWN                &kp RIGHT          &kp BACKSPACE  &trans
+&trans  &kp ESC       &hm LEFT_GUI NUMBER_1  &hm LEFT_ALT NUMBER_2  &hm LEFT_CONTROL NUMBER_3  &kp PLUS                          &kp PAGE_UP    &hm RCTRL HOME  &hm RIGHT_ALT UP_ARROW  &hm RIGHT_GUI END  &kp BACKSPACE  &trans
+&trans  &kp TAB       &kp NUMBER_4           &kp NUMBER_5           &kp NUMBER_6               &kp MINUS                         &kp PAGE_DOWN  &kp LEFT_ARROW  &kp DOWN                &kp RIGHT          &kp DELETE     &trans
 &trans  &kp NUMBER_0  &kp NUMBER_7           &kp NUMBER_8           &kp NUMBER_9               &kp PERIOD  &trans       &trans   &key_repeat    &kp H           &kp J                   &kp K              &kp L          &trans
                                              &trans                 &trans                     &kp LWIN    &kp SPACE    &kp RET  &kp BSPC       &trans          &trans
             >;
